@@ -1,0 +1,209 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 50px; 
+}
+/* navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+
+}
+/* navigation bar: logo and image */
+#logo{
+    margin: 5px 8px;
+
+}
+#logo img{
+    height: 60;
+    margin: 10px 15px;
+}
+/* navigation bar: List styling */
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ #navbar ul li a:hover{
+    color: black;
+
+    display: block;
+    background-color: white;
+
+ }
+ /* home section */
+ #home{
+     display: flex;
+     flex-direction: column;
+    padding: 3px 150px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+
+    }
+    #home::before{
+        content: " ";
+        background: url('../bgp2.jpg') no-repeat center/cover;
+        position: absolute;
+        height: 620px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.89;
+    
+       }
+    #home h1{
+        color:whitesmoke;
+        text-align: center;
+        font-size: 3.8rem;
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.6rem;
+
+    }
+/* serviecs-section  */
+
+#sevices{
+
+    margin: 34px;
+    display: flex;
+}
+#sevices .box{
+    border: 2px solid brown;
+    pad: 34px;
+    margin: 25px;
+    border-radius: 23px;
+    background-color: rgb(194, 173, 173);
+}
+#sevices .box img{
+    padding: 7px;
+   height: 120px;
+   margin: auto;
+   display: block;
+
+}
+
+#sevices .box p{
+    margin-left: 1px;
+    margin-right: 1px;
+
+}       /* utility */
+    .h-primary{
+           font-size: 2.5rem;  
+           padding: 12px; 
+    }
+    .h-secondary{
+        font-size: 1.6rem;  
+        padding: 12px; 
+ }
+    .btn
+    {
+        margin: 18px;
+        padding: 8px 20px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    .center{
+        text-align: center;
+
+    }
+    /* contact-section  */
+
+#contact{
+position: relative;
+}
+#contact::before{
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background: url('../pexels-volkan-vardar-3887985.jpg') no-repeat center center/cover;
+z-index: -1;
+opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input{
+
+}
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+}
+/* client section */   
+#clients {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+} 
+.client-item{
+    padding: 34px;
+
+}
+#clients img{
+    height: 60px;
+} 
+#client-section{
+    position: relative;
+   height: 400px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    height: 45%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ }
+#footer{
+    color: white;
+    background: black;
+    padding: 9px 20px;
+}
