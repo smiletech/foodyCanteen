@@ -25,6 +25,7 @@
 #logo img{
     height: 60;
     margin: 10px 15px;
+    border-radius: 50px;
 }
 /* navigation bar: List styling */
 #navbar::before{
@@ -58,17 +59,23 @@
  }
  #navbar ul li a:hover{
     color: black;
-
     display: block;
     background-color: white;
 
  }
+ .cart{
+    padding-left: 400px;
+ }
+
+
+
+
  /* home section */
  #home{
      display: flex;
      flex-direction: column;
-    padding: 3px 150px;
-    height: 570px;
+    padding: 3px 140px;
+    height: 500px;
     justify-content: center;
     align-items: center;
 
@@ -93,20 +100,25 @@
     #home p{
         color: white;
         text-align: center;
+        padding: 2px;
         font-size: 1.6rem;
-
+        flood-opacity: 0.89;
     }
 /* serviecs-section  */
 
 #sevices{
-
-    margin: 34px;
+    margin: 2px;
     display: flex;
+    
+}
+.decorate a{
+    text-decoration: none;
+    color: black;
 }
 #sevices .box{
     border: 2px solid brown;
     pad: 34px;
-    margin: 25px;
+    margin: 5px;
     border-radius: 23px;
     background-color: rgb(194, 173, 173);
 }
@@ -124,6 +136,7 @@
 
 }       /* utility */
     .h-primary{
+       
            font-size: 2.5rem;  
            padding: 12px; 
     }
@@ -133,7 +146,7 @@
  }
     .btn
     {
-        margin: 18px;
+        margin: 8px;
         padding: 8px 20px;
         border: 2px solid white;
         background-color: brown;
@@ -150,8 +163,12 @@
     /* contact-section  */
 
 #contact{
+border-top: 1px solid rebeccapurple;
 position: relative;
+color: azure;
+font-family: 'bree serif',serif;
 }
+
 #contact::before{
 content: "";
 position: absolute;
@@ -165,12 +182,11 @@ opacity: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 34px;
+    padding-bottom: 31px;
 
 }
-#contact-box input{
 
-}
+#contact-box input,
 #contact-box textarea{
 width: 100%;
 padding: 0.5rem;
@@ -178,9 +194,10 @@ padding: 0.5rem;
 /* client section */   
 #clients {
     display: flex;
-    height: 60px;
+    height: 140px;
     justify-content: center;
     align-items: center;
+    
 } 
 .client-item{
     padding: 34px;
@@ -189,10 +206,11 @@ padding: 0.5rem;
 #clients img{
     height: 60px;
 } 
-#client-section{
+/* #client-section{
     position: relative;
-   height: 400px;
-}
+     height: 480px;
+} */
+
 #client-section::before{
     content: "";
     position: absolute;
@@ -201,6 +219,26 @@ padding: 0.5rem;
     width: 100%;
     z-index: -1;
     opacity: 0.4;
+ }
+
+
+ /* about */
+ #about{
+     background-color: rgb(226, 220, 220);
+ }
+ .about{
+    display: flex;
+ }
+ .about h2{
+   
+     padding-left: 600px;
+     padding-top: 10px;
+     text-align: center;
+
+ }
+ .about img{
+     height: 120px;
+     width: 180px;
  }
 #footer{
     color: white;
